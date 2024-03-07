@@ -122,7 +122,7 @@ img {
   height: 4px;
   background-color: #404bbf;
   left: 0;
-  bottom: -3px;
+  bottom: -1px;
   border-radius: 2px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -188,12 +188,13 @@ img {
   overflow: hidden;
 }
 
-.advantages-icon {
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  width: 264px;
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 112px;
   background-color: #f4f4fd;
+  border-radius: 4px;
   margin-bottom: 8px;
 }
 
@@ -295,6 +296,20 @@ img {
   margin-bottom: 8px;
 }
 
+.aplication-image {
+  overflow: hidden;
+}
+
+.aplication-text {
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* --------------------- FOOTER*/
 
 .info {
@@ -317,7 +332,7 @@ img {
 
 .info .container {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
 }
 
 .footer-social-title {
@@ -328,4 +343,8 @@ img {
 
 .info .social-links {
   gap: 16px;
+}
+
+.info-container {
+  margin-right: 120px;
 }

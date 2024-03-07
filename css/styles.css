@@ -124,7 +124,7 @@ img {
   left: 0;
   bottom: -1px;
   border-radius: 2px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* --------------------- FIRST SECTION*/
@@ -283,7 +283,7 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16),
       0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-portfolio-names {
@@ -353,9 +353,9 @@ img {
   margin-right: 120px;
 }
 
-.social-link {
+.info .social-link {
   height: 40px;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link {
@@ -368,6 +368,11 @@ img {
   justify-content: center;
 }
 
-.footer-link:hover {
+.footer-link:hover,
+.footer-link:focus {
   background-color: #31d0aa;
+}
+
+.info .social-icon {
+  fill: #f4f4fd;
 }

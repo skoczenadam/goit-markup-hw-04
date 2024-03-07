@@ -36,8 +36,13 @@ img {
   padding: 120px 0;
 }
 
+/* --------------------- NAGŁÓWEK */
+
 .main-navigation {
   border-bottom: 1px solid #E7E9FC;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .main-navigation .container {
@@ -82,6 +87,7 @@ img {
 .main-link {
   color: #2E2F42;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .web {
@@ -118,7 +124,10 @@ img {
   left: 0;
   bottom: -3px;
   border-radius: 2px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* --------------------- FIRST SECTION*/
 
 .main-button:hover,
 .main-button:focus {
@@ -134,6 +143,9 @@ img {
   background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: 50%;
+  max-width: 1440px;
+  background-size: cover;
+  margin: 0 auto;
 }
 
 .main-title {
@@ -158,7 +170,10 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* --------------------- SECOND SECTION*/
 
 .visually-hidden {
   position: absolute;
@@ -200,6 +215,8 @@ img {
   color: #2E2F42;
 }
 
+/* --------------------- THIRD SECTION*/
+
 .our-team {
   background-color: #F4F4FD;
 }
@@ -222,12 +239,14 @@ img {
 .our-team-list {
   background-color: #fff;
   border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 1px #2E2F4229;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .our-team-names {
-  padding: 8px 0;
+  padding: 32px 0;
 }
 
 .our-team-names .text-title,
@@ -249,6 +268,8 @@ img {
   border-radius: 50%;
 }
 
+/* --------------------- FOURTH SECTION*/
+
 .our-portfolio-lists {
   display: flex;
   column-gap: 24px;
@@ -258,6 +279,10 @@ img {
 
 .our-portfolio-list {
   width: calc((100% - 48px) / 3);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 2px 1px rgba(46, 47, 66, 0.08);
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-portfolio-names {
@@ -269,6 +294,8 @@ img {
 .our-portfolio-list .text {
   margin-bottom: 8px;
 }
+
+/* --------------------- FOOTER*/
 
 .info {
   background-color: #2E2F42;
